@@ -1,0 +1,1 @@
+export { PasteImage } from './PasteImage'
