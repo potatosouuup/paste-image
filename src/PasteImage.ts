@@ -1,21 +1,8 @@
 import getYoutubeThumbnail from './getYoutubeThumbnail'
+import { MediaModel, MediaType } from 'ch-admin-api-client-typescript/lib'
 
 const containerUrl = `blob.core.windows.net`
 const cdnUrl = `icloudhospital.com`
-
-enum MediaType {
-  Photo = 'Photo',
-  Youtube = 'Youtube'
-}
-
-interface MediaModel {
-  id?: string
-  mediaType?: MediaType
-  url?: string | null
-  thumbnailUrl?: string | null
-  description?: string | null
-  order?: number
-}
 
 interface Params {
   content: any
